@@ -34,12 +34,7 @@ class Index extends React.Component {
 
             <div className="contributors">
               <p>
-                Created by Eric Windmill.{' '}
-                <a href="https:twitter.com/ericwindmill">
-                  You should follow him on Twitter.
-                </a>{' '}
-                Also, <a href="https://github.com/Levino">Levin Keller</a> for
-                making it better than I could{"'"}ve alone.
+                Created by a few bored coders at <a href="https://codebet.se">Codebet</a>.
               </p>
             </div>
           </BodyContainer>
