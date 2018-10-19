@@ -1,7 +1,7 @@
 module.exports = {
   blogPostDir: "posts", // The name of directory that contains your posts.
   lessonsDir: "lessons", // The name of the directory that contains lessons or docs.
-  siteTitle: "Nimble Utilities Documentation", // Site title.
+  siteTitle: "Nimble Utilities", // Site title.
   siteTitleAlt: "A React Native package for quick and easy styling of components", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://nimbleutilities.com", // Domain of your website without pathPrefix.
