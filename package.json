@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-docs-starter",
-  "description": "GatsbyJS starter designed with documentation and tutorial websites in mind.",
+  "name": "nimble-docs",
+  "description": "A React Native package for quick and easy styling of components.",
   "version": "1.0.1",
-  "author": "Eric Windmill <eric@ericwindmill.com>",
+  "author": "Codebet <tech@codebet.se>",
   "dependencies": {
     "babel-plugin-lodash": "^3.2.11",
     "gatsby": "^1.9.231",
