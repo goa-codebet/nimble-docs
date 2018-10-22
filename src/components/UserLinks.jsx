@@ -35,7 +35,7 @@ class UserLinks extends Component {
         <UserIcon href="https://www.instagram.com/codebet_se">
           <FaInstagram style={iconStyle} />
         </UserIcon>
-        <UserIcon href="mailto:eric@ericwindmill.com">
+        <UserIcon href="mailto:tech@codebet.se">
           <MdEmail style={iconStyle} />
         </UserIcon>
       </Container>
