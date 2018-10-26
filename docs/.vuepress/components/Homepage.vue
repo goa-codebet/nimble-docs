@@ -2,8 +2,18 @@
   <div class="home">
     <div class="wrapper">
 
-      <div class="logo">
+      <!-- <div class="logo">
         <img :src="$withBase(data.logo)" alt="logo">
+      </div> -->
+
+
+      <div class="header">
+        <h1>
+          Nimble
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing 
+        </p>
       </div>
 
       <div class="footer" v-if="data.footer">
@@ -51,7 +61,7 @@ body
       display block
       width 100%
       height auto
-      max-width 150px
+      max-width 550px
       border-radius 500rem
   .card
     max-width: 600px
