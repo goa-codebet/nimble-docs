@@ -1,114 +1,90 @@
-<div align="center">
-    <img src="static/logos/logo-1024.png" alt="Logo" width='100px' height='100px'/>
-</div>
+<h1 align="center">
+  <a href="https://github.com/mtobeiyf/vuepress-homepage" title="Homepage">
+    <img src="https://user-images.githubusercontent.com/5097752/39163721-4c79012c-47ae-11e8-842b-2af72f69cc2c.jpg" width="300px" alt="">
+  </a>
+  <br />
+  Your Awesome Homepage
+</h1>
 
-# Gatsby Docs Starter 1.0
+<p align="center">
+  Build your site like a Pro :v:
+</p>
 
-#### This Project was forked from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="">
+  <img src="https://img.shields.io/badge/PR-welcome-brightgreen.svg" alt="">
+</p>
 
-A starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/).
+<h2>
+  <a href="https://vuepress-homepage.netlify.com" target="_blank" title="Demo">
+    Live Demo
+  </a>
+</h2>
 
-Developed for creating Documentation or Tutorial websites.
+Screenshots:
 
-### [Demo](https://gatsby-docs-starter.netlify.com/)
+| About Me :raising_hand: | Projects/Publications :books: |
+| :---: | :---: |
+| <img src="https://user-images.githubusercontent.com/5097752/39126631-798faf4a-4735-11e8-993d-6f314d4f2b55.png"/> | <img src="https://user-images.githubusercontent.com/5097752/39126639-7d9511f2-4735-11e8-873e-8042a0116893.png"/> |
 
-This template provides everything but the content. You could just write all your lessons in markdown files, configure a few lines of code, and have a completely built documentation website.
+| Documentation :closed_book: | Simple Page :memo: |
+| :---: | :---: |
+| <img src="https://user-images.githubusercontent.com/5097752/39138307-3aba2904-4752-11e8-913a-7c716ca7477b.png"/> | <img src="https://user-images.githubusercontent.com/5097752/39139534-c2fa6494-4754-11e8-9dfb-107a3d530797.png"/> |
 
-## Changelog
+<h2>
+  <a href="https://vuepress-homepage.netlify.com/guide/" target="_blank" title="Getting Started">
+    Getting Started
+  </a>
+</h2>
 
-Updated 3/17/18
+Check the full documentation here :point_right: [Guide](https://vuepress-homepage.netlify.com/guide/)
 
-* Updated Table of Contents system: 
-   * You now define your table of contents in the 'table_of_contents.json' file under the 'content' folder.
-   * The GraphQl query in your 'lesson' template should match your table_of_contents.
-   * The `TableOfContents` component does the rest.
+Make sure you have [Node.js](https://nodejs.org) and [yarn](https://yarnpkg.com) installed.
 
-This requires more upfront work, but I've found it to be infintely better when your page count gets high. It's easier to move things around and have the ToC **just work**.
+```bash
+# Clone the repo
+$ git clone https://github.com/mtobeiyf/vuepress-homepage.git
+$ cd vuepress-homepage
 
-For a more complicated example, you can look at the repo for the site I built this for: [Flutter By Example](https://github.com/ericwindmill/flutter-by-example-www)/
-   
-* Basic styling added to the 'post' template
-* Mobile responsive
-    
+# Install dependencies
+$ yarn  # or npm install
+
+# Run
+$ yarn dev  # or npm run dev
+```
+
+Check your site at `http://127.0.0.1:8080/`
+
 ## Features
 
-<div align="center">
-    <img src="static/screen-shot-v0-1.png" alt="Logo" width='800px' />
-</div>
-<div align="center">
-    <img src="static/screen-shot-v0-2.png" alt="Logo" width='800px' />
-</div>
+- Markdown and emoji supported :smiley:
+- Elegant and minimalistic
+- Customizable and mobile-friendly
+- Multi-language support
+- Powered by [VuePress](https://vuepress.vuejs.org/) and [Vue.js](https://vuejs.org/)
 
-### New Features
+It's **static**, which means once generated, your site could be deployed anywhere, like [Netlify](https://www.netlify.com/) or [GitHub Pages]()
 
-* Basic UI
-* Styled Components CSS w/ ThemeProvider for easy cross-site UI changes.
-* Custom code-highlight theme
-* React Icons
-* Configured to auto generate documentation 'Table of Contents'
-* You can also have blog posts.
+| Simple Editing | Elegant Output |
+| :---: | :---: |
+| <img src="https://user-images.githubusercontent.com/5097752/39165083-42470364-47b5-11e8-8e1b-e225e6cf4161.png"/> | <img src="https://user-images.githubusercontent.com/5097752/39165092-4af03422-47b5-11e8-986e-02bee0fe6979.jpg"/> |
 
-### Updates
+It's **responsive** and **mobile friendly**.
 
-* December 23, 2017 - The 'Docs' page is now mobile responsive.
+| Main | Projects | Doc | Sidebar |
+| :---: | :---: | :---: | :---: |
+| <img src="https://user-images.githubusercontent.com/5097752/39163461-30a0e754-47ad-11e8-84ff-0c6716d6e937.jpg"/> | <img src="https://user-images.githubusercontent.com/5097752/39163230-2c917634-47ac-11e8-9c08-a87336c0bb02.jpg"/> | <img src="https://user-images.githubusercontent.com/5097752/39163235-32001436-47ac-11e8-8a80-f5aa1d639b82.png"/> | <img src="https://user-images.githubusercontent.com/5097752/39163238-368bfb5a-47ac-11e8-81b9-78a38af16dfe.jpg"/> |
 
-### These are the features from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter), which remain:  
-* Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-* Separate components for everything
-* High configurability:
-  * User information
-  * User social profiles
-  * Copyright information
-  * More!
-* Author segment
-  * Name
-  * Location
-  * Description
-  * Links
-  * Follow Me button
-* Posts in Markdown
-  * Code syntax highlighting
-  * Embed YouTube videos
-  * Embed Tweets
-* Tags
-  * Separate page for posts under each tag
-* Categories
-  * Separate page for posts under each category
-* Disqus support
-  * Notifications about new disqus comments
-* Google Analytics support
-* NPM scripts for GitHub Pages deployment
-* Social features
-  * Twitter tweet button
-  * Facebook share/share count
-  * Reddit share/share count
-  * Google+ share button
-  * LinkedIn share button
-  * Telegram share button
-* SEO
-  * Sitemap generation
-  * robots.txt
-  * General description tags
-  * Schema.org JSONLD (Google Rich Snippets)
-  * OpenGraph Tags (Facebook/Google+/Pinterest)
-  * Twitter Tags (Twitter Cards)
-* RSS feeds
-* Loading progress for slow networks
-* Offline support
-* Web App Manifest support
-* Development tools
-  * ESLint for linting
-  * Prettier for code style
-  * Remark-Lint for linting Markdown
-  * write-good for linting English prose
-  * gh-pages for deploying to GitHub pages
-  * CodeClimate configuration file and badge
 
-*** 
 
-### Notes
- [Ruben Harutyunyan](https://github.com/Vagr9K) did most of the hard work with [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
- The rest of the credit is due to [Gatsby](https://github.com/gatsbyjs/gatsby/).
- 
+## Credit
 
- WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!
+[VuePress](https://vuepress.vuejs.org/): Vue-powered Static Site Generator
+
+[Vue.js](https://vuejs.org/): The Progressive JavaScript Framework
+
+## License
+
+Copyright © 2018, Fing
+
+Released under the [MIT License](https://opensource.org/licenses/MIT).
