@@ -14,6 +14,8 @@
     "vuepress": "^0.14.1"
   },
   "dependencies": {
+    "buefy": "^0.7.0",
+    "bulma": "^0.7.2",
     "markdown-it": "^8.4.1",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-katex": "^2.0.3"
