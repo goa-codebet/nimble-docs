@@ -14,6 +14,11 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing 
         </p>
+        <a href="/projects/">
+          <button class="button">
+            Get started →
+          </button>
+        </a>
       </div>
 
       <div class="footer" v-if="data.footer">
@@ -48,12 +53,39 @@ body
       padding-left 0
       padding-right 0
       padding 1rem 0.5rem
+
 .wrapper
   width 100%
   display: flex
   flex-direction column
   // justify-content: center
   align-items center
+
+  h1
+    font-size: 4rem
+
+  p
+    font-size: 1.5rem
+
+  .button
+    background-color $btnBgColor
+    border none
+    border-radius 0.3em
+    color white
+    padding 1em
+    margin 1em 0.5em
+    font-size 1.2rem
+    font-family inherit
+    font-weight 400
+    text-align center
+    text-decoration none
+    display inline-block
+    -webkit-transition-duration 0.4s /* Safari */
+    transition-duration 0.4s
+    cursor pointer
+    &:hover
+      background-color $btnHvColor
+  
   .avatar 
     position relative
     z-index 1
@@ -114,24 +146,6 @@ body
       justify-content: center
       flex-wrap wrap
       // padding 1em
-      .button
-        background-color $btnBgColor
-        border none
-        border-radius 0.3em
-        color white
-        padding 0.5em 1em
-        margin 1em 0.5em
-        font-size 1rem
-        font-family inherit
-        font-weight 400
-        text-align center
-        text-decoration none
-        display inline-block
-        -webkit-transition-duration 0.4s /* Safari */
-        transition-duration 0.4s
-        cursor pointer
-        &:hover
-          background-color $btnHvColor
   .footer
       padding 1rem
       // border-top 1px solid lighten(#bdc3c7, 50%)
