@@ -22,6 +22,8 @@ module.exports = {
     'nuxt-buefy'
   ],
 
+  serviceWorker: true,
+
   markdown: {
     // options for markdown-it-anchor
     anchor: { permalink: false },
