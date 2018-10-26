@@ -1,7 +1,7 @@
 ---
 layout: Homepage
 description: 'React Native utility package.'
-avatar: /profile.jpg
+logo: /nimble.png
 head: 'Nimble'
 info: 'React Native utility package'
 interests: 'Interests: Coding.'

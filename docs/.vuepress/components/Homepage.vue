@@ -2,7 +2,9 @@
   <div class="home">
     <div class="wrapper">
 
-      <a href="/projects/" class="button is-primary">Projects</a>
+      <div class="logo">
+        <img :src="$withBase(data.logo)" alt="logo">
+      </div>
 
       <div class="footer" v-if="data.footer">
         {{ data.footer }}
