@@ -8,8 +8,8 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "Projects", link: "/projects/" },
       { text: "Guide", link: "/guide/" },
+      { text: "News", link: "/news/" },
       { text: "GitHub", link: "https://github.com/goa-codebet/nimble" }
     ],
     sidebar: {
@@ -17,10 +17,6 @@ module.exports = {
     },
     lastUpdated: 'Last Updated'
   },
-
-  plugins: [
-    'nuxt-buefy'
-  ],
 
   serviceWorker: true,
 
@@ -37,7 +33,7 @@ function genSidebarConfig (title) {
   return [
     {
       title,
-      collapsable: false,
+      collapsable: true,
       children: [
         '',
         'getting-started',

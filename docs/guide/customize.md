@@ -11,13 +11,13 @@ Now, we care about the **docs** directory which includes:
 ```
 docs
 ├── guide
-├── projects
+├── news
 ├── README.md
 └── .vuepress
     ├── components
     │   ├── Homepage.vue
     │   ├── MContent.vue
-    │   ├── Projects.vue
+    │   ├── News.vue
     │   └── styles
     │       └── config.styl
     ├── config.js
@@ -25,12 +25,12 @@ docs
     └── public
         ├── icons
         ├── profile.jpg
-        └── projects
+        └── news
 ```
 
 ### The documents
 
-The entry page is `README.md`, followed by sub-pages under the directories `guide` and `projects`.
+The entry page is `README.md`, followed by sub-pages under the directories `guide` and `news`.
 
 You can modify, delete and create your own directory and `README.md` files according to your needs.
 
@@ -70,9 +70,9 @@ This **Guide** contains separate files under `docs/guide`. To enable sidebar, yo
 
 As you can see in the `docs/README.md`, most of the contents are written in the YAML front matter. Just modify the corresponding section and you should get yours.
 
-### Projects
+### News
 
-Actually, it's a pure Markdown file. You can use the inline widget `<MarkdownCard>` to show your project, publication or portfolio. Check the example at `docs/projects/README.md`.
+Actually, it's a pure Markdown file. You can use the inline widget `<MarkdownCard>` to show your project, publication or portfolio. Check the example at `docs/news/README.md`.
 
 You can even add some more sections with Markdown to make this page a resume for you.
 

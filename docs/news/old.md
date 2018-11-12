@@ -1,9 +1,9 @@
 ---
-layout: Projects
+layout: News
 sidebar: false
 
-projects:
-- image: /projects/1.png
+news:
+- image: /news/1.png
   rows:
   - content: 'Harry P., Hermione G., *et al*'
   - content: "**The Making of Harry Potter's Wand**"
@@ -15,6 +15,6 @@ projects:
   - content: '[[Link](https://www.google.com)]'
 ---
 
-## Projects & Publications
+## News & Publications
 
-Harry has some cool projects :sunglasses:
+Harry has some cool news :sunglasses:

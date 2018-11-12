@@ -4,7 +4,7 @@ This is a skeleton built for generating static site for yourself, especially hel
 
 It's suitable for building your personal homepage with:
 - About me :raising_hand:
-- Projects, publications, portfolio :books:
+- News, publications, portfolio :books:
 - Biography, timeline, resume(CV) :page_with_curl: 
 
 ## Features

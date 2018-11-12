@@ -14,7 +14,7 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing 
         </p>
-        <a href="/projects/">
+        <a href="/guide/">
           <button class="button">
             Get started →
           </button>

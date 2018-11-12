@@ -1,13 +1,13 @@
 <template>
-  <div class="projects">
+  <div class="news">
     <div class="wrapper">
       <Content/>
-      <div class="project" v-for="project in data.projects">
-        <div v-if="project.image" class="project-image">
-          <img :src="$withBase(project.image)" alt="">
+      <div class="project" v-for="news in data.news">
+        <div v-if="news.image" class="project-image">
+          <img :src="$withBase(news.image)" alt="">
         </div>
         <div class="project-content">
-          <div v-for="row in project.rows" >
+          <div v-for="row in news.rows" >
             <m-content :content="row.content"></m-content>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default {
 <style lang="stylus">
 @import './styles/config.styl'
 
-.projects
+.news
   max-width 100%
   background-color $projBgColor
   min-height calc(100vh - 3.6rem)
@@ -87,7 +87,7 @@ export default {
           font-size 1rem
 
 @media (max-width: $MQMobileNarrow)
-  .projects
+  .news
     .wrapper
       padding 1rem 1rem
       .project

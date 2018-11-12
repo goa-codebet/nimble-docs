@@ -15,8 +15,8 @@ socials:
 - title: email
   link: 'mailto:tech[at]codebet.se'
 actions:
-- text: Projects
-  link: /projects/
+- text: News
+  link: /news/
 - text: Blog
   link: https://github.com/goa-codebet
 - text: CV
