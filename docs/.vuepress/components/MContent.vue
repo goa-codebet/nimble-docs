@@ -20,14 +20,8 @@ export default {
   },
 
   mounted() {
-    var md = new markdownIt().use(emoji);
-    var result;
-    if (this.inline) {
-      result = md.renderInline(this.content);
-    } else {
-      result = md.render(this.content);
-    }
-    this.$el.innerHTML = result;
+    const md = new markdownIt().use(emoji);
+    this.$el.innerHTML = this.inline ? md.renderInline(this.content) : md.render(this.content)
   }
 };
 </script>
