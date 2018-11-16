@@ -3,7 +3,7 @@
   "version": "0.1",
   "description": "Nimble utility stling",
   "author": "Codebet <tech@codebet.se>",
-  "repository": "https://github.com/goa-codebet/nimble.git",
+  "repository": "https://github.com/goa-codebet/nimble-utils.git",
   "scripts": {
     "clean": "rimraf dist/*",
     "dev": "vuepress dev docs",

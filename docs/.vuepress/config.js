@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Nimble",
+  title: "Nimble-utils",
   description: "The description of the site.",
   head: [["link", { rel: "icon", href: `/logo.png` }]],
   base: "/",
@@ -10,7 +10,7 @@ module.exports = {
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
       { text: "News", link: "/news/" },
-      { text: "GitHub", link: "https://github.com/goa-codebet/nimble" }
+      { text: "GitHub", link: "https://github.com/goa-codebet/nimble-utils" }
     ],
     sidebar: {
       '/guide/': genSidebarConfig('Guide')

@@ -9,7 +9,7 @@
 
       <div class="header">
         <h1>
-          Nimble
+          Nimble-utils
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing 
