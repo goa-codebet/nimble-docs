@@ -1,6 +1,8 @@
-## News
+# News
 
-**Updates and news regarding the nimble-utils package**
+#### Updates and news regarding the nimble-utils package
+
+<br>
 
 <MarkdownCard>
 

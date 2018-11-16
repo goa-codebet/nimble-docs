@@ -2,11 +2,11 @@
   <div class="news">
     <div class="wrapper">
       <Content/>
-      <div class="project" v-for="news in data.news">
-        <div v-if="news.image" class="project-image">
+      <div class="news" v-for="news in data.news">
+        <div v-if="news.image" class="news-image">
           <img :src="$withBase(news.image)" alt="">
         </div>
-        <div class="project-content">
+        <div class="news-content">
           <div v-for="row in news.rows" >
             <m-content :content="row.content"></m-content>
           </div>
@@ -49,7 +49,7 @@ export default {
       margin-left auto 
       margin-right auto
       width 100%
-    .project
+    .news
       background-color $frontColor   
       border 1px solid #eee
       border-radius 0.5rem
@@ -65,7 +65,7 @@ export default {
       flex-direction row
       align-items: stretch
       // justify-content: center
-      .project-image
+      .news-image
         display flex
         align-items center
         padding 0.5rem
@@ -76,7 +76,7 @@ export default {
           border: 1px solid #eee;
           border-radius 0.2rem
           object-fit cover
-      .project-content
+      .news-content
         padding 0.5rem
         flex-grow 1
         p
@@ -90,13 +90,13 @@ export default {
   .news
     .wrapper
       padding 1rem 1rem
-      .project
+      .news
         display flex
         flex-direction column
         padding 0.5rem
         width 100%
         box-sizing border-box
-        .project-image
+        .news-image
           flex-grow 1
           align-items: stretch
           img 

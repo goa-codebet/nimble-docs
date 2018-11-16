@@ -72,7 +72,7 @@ As you can see in the `docs/README.md`, most of the contents are written in the 
 
 ### News
 
-Actually, it's a pure Markdown file. You can use the inline widget `<MarkdownCard>` to show your project, publication or portfolio. Check the example at `docs/news/README.md`.
+Actually, it's a pure Markdown file. You can use the inline widget `<MarkdownCard>` to show your news, publication or portfolio. Check the example at `docs/news/README.md`.
 
 You can even add some more sections with Markdown to make this page a resume for you.
 
