@@ -10,7 +10,7 @@ module.exports = {
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
       { text: "News", link: "/news/" },
-      { text: "GitHub", link: "https://github.com/goa-codebet/nimble-utils" }
+      { text: "GitHub ⤴", link: "https://github.com/goa-codebet/nimble-utils" }
     ],
     sidebar: {
       '/guide/': genSidebarConfig('Guide')
