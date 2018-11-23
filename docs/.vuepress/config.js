@@ -1,6 +1,6 @@
 module.exports = {
   title: "Nimble-utils",
-  description: "The description of the site.",
+  description: "Probably the best design utility package in the world.",
   head: [["link", { rel: "icon", href: `/logo.png` }]],
   base: "/",
   dest: "./dist",

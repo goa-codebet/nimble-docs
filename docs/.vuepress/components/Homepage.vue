@@ -19,6 +19,7 @@
             Get started →
           </button>
         </a>
+      <div class="header-background"></div>
       </div>
 
       <div class="footer" v-if="data.footer">
@@ -44,7 +45,6 @@ export default {
 body
   .home
     max-width 100%
-    background-color $homeBgColor
     min-height calc(100vh - 6rem)
     display flex
     padding 2.4rem 2rem 0
@@ -54,12 +54,25 @@ body
       padding-right 0
       padding 1rem 0.5rem
 
+.header
+  color $fontColor
+  margin-left 7%
+
+.header-background
+  background-image url('/background.svg')
+  background-repeat no-repeat
+  background-size cover
+  height 600px
+  width 100%
+  position fixed
+  top 0
+  left 0
+  z-index -20
+
 .wrapper
   width 100%
   display: flex
   flex-direction column
-  // justify-content: center
-  align-items center
 
   h1
     font-size: 4rem
@@ -69,9 +82,9 @@ body
 
   .button
     background-color $btnBgColor
+    color $btnFontColor
     border none
     border-radius 0.3em
-    color white
     padding 1em
     margin 1em 0.5em
     font-size 1.2rem
