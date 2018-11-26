@@ -16,7 +16,12 @@
         </p>
         <a href="/guide/">
           <button class="button">
-            Get started →
+            Get started
+          </button>
+        </a>
+        <a href="/guide/">
+          <button class="button">
+            Documentation
           </button>
         </a>
       <div class="header-background"></div>
