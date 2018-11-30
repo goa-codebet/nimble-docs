@@ -39,6 +39,7 @@ function genSidebarConfig (title) {
         'getting-started',
         'customize',
         'advanced',
+        'about',
       ]
     }
   ]
