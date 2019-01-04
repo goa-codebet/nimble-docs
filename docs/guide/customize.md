@@ -1,85 +1,53 @@
-# Customize
+# Props
 
-We'll take this repo as an example to show you how to make this site as you like.
+These are the props for the following components
 
-Don't forget to refer to official [VuePress Guide](https://vuepress.vuejs.org/guide/) to find out more.
+## Components
 
-## Structure
+### View
 
-Now, we care about the **docs** directory which includes:
+| Props     | Value                                                                   | Description                                                      |
+| --------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| f         | number                                                                  | flex                                                             |
+| wrap      | wrap, nowrap                                                            | flex wrap                                                        |
+| flexBasis | number, string                                                          | flex basis                                                       |
+| dir       | row, column, row-reverse, column-reverse                                | flex direction                                                   |
+| grow      | number                                                                  | flex grow                                                        |
+| shrink    | number                                                                  | flex shrink                                                      |
+| justify   | flex-start, flex-end, center, space-between, space-around, space-evenly | justify content                                                  |
+| align     | flex-start, flex-end, center, stretch, baseline                         | align items                                                      |
+| zIndex    | number                                                                  | z-index                                                          |
+| bg        | string                                                                  | background color                                                 |
+| o         | number                                                                  | opacity                                                          |
+| h         | number                                                                  | height                                                           |
+| w         | number                                                                  | width                                                            |
+| left      | number                                                                  | left                                                             |
+| right     | number                                                                  | right                                                            |
+| bottom    | number                                                                  | bottom                                                           |
+| top       | number                                                                  | top                                                              |
+| radius    | number, string                                                          | border radius                                                    |
 
-```
-docs
-├── guide
-├── news
-├── README.md
-└── .vuepress
-    ├── components
-    │   ├── Homepage.vue
-    │   ├── MContent.vue
-    │   ├── News.vue
-    │   └── styles
-    │       └── config.styl
-    ├── config.js
-    ├── override.styl
-    └── public
-        ├── icons
-        ├── profile.jpg
-        └── news
-```
 
-### The documents
+### Text
 
-The entry page is `README.md`, followed by sub-pages under the directories `guide` and `news`.
+| Props          | Value                                                 | Description                                                          |
+| -------------- | ----------------------------------------------------- | -------------------------------------------------------------------- |
+| color          | string                                                | color                                                                |
+| size           | string, number                                        | font size                                                            |
+| weight         | string                                                | font weight                                                          |
+| lineHeight     | number                                                | line height                                                          |
+| textAlign      | auto, left, right, center, justify                    | text align                                                           |
+| font           | string                                                | font family                                                          |
+| spacing        | number                                                | letter spacing                                                       |
+| o              | number                                                | opacity                                                              |
+| uppercase      | boolean                                               | make all letters uppercase                                           |
+| capitalize     | boolean                                               | make only first letter uppercase                                     |
+| bold           | boolean                                               | font weight set to 700                                               |
 
-You can modify, delete and create your own directory and `README.md` files according to your needs.
 
-You should have basic idea of [Markdown](https://guides.github.com/features/mastering-markdown/) and YAML Front Matter.
+### Utils
 
-### config.js
-
-The config files of this site are all placed under `.vuepress` directory. The only two you need to concern is `config.js` and `public` folder.
-
-### public
-
-You need to place your images under `docs/.vuepress/public` directory, so that you can access them using `/profile.jpg` in the yaml section of the `README.md` file.
-
-## Modification
-
-### Title
-
-The title of the site and the navbar is in the `docs/.vuepress/config.js`
-
-### Navbar links
-
-Still in the `config.js`, under the `themeConfig` key.
-
-### Homepage
-
-If you don't like the homepage, simply modify the `docs/README.md` file to switch to another layout or just Markdown page.
-
-### Sidebar
-
-There are two different types of sidebars: routing between multiple Markdown files and TOC of a single page.
-
-This **Guide** contains separate files under `docs/guide`. To enable sidebar, you have to manually set this in the `config.js`.
-
-## Pages
-
-### Homepage
-
-As you can see in the `docs/README.md`, most of the contents are written in the YAML front matter. Just modify the corresponding section and you should get yours.
-
-### News
-
-Actually, it's a pure Markdown file. You can use the inline widget `<MarkdownCard>` to show your news, publication or portfolio. Check the example at `docs/news/README.md`.
-
-You can even add some more sections with Markdown to make this page a resume for you.
-
-### Customize Page
-
-Adding a page is simple, create `docs/Foo/README.md` and you can access it with link `/Foo/` in the context.
-
-To automatically generate the sidebar of the current page, add `sidebar: auto` in the front matter section.
-
-You can even tune the styles with `<style>` tag. Check [here](https://vuepress.vuejs.org/guide/using-vue.html#using-pre-processors) for more information.
+| Props     | Value                                                      | Description                                                          |
+| --------- | ---------------------------------------------------------- | -------------------------------------------------------------------- |
+| center    | boolean                                                    | margin                                                               |
+| elevation | number                                                     | marginTop                                                            |
