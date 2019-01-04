@@ -1,15 +1,46 @@
 <template>
-  <div class="home">
+
+  <main class="index">
+
+    <section class="index__hero">
+    
+      <div class="index__hero-text o-container">
+        <h1>React Native Nimble</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <p>Fusce dapibus ligula sit amet metus rutrum iaculis. Donec eu sapien ac ante convallis tincidunt vestibulum at eros. Ut id luctus mi, imperdiet aliquet risus. Nam eget commodo metus. Ut lacus dolor, malesuada.</p>
+      </div>
+      
+      <img 
+        class="index__hero-background"
+        role="presentation"
+        src="/hero-curve.svg">
+        
+    </section>
+
+    <section class="index__section index__section-one">
+      <div class="index__section-one-inner o-container u-text-center">
+
+        <h3 class="u-mb-1">Why Nimble Utils?</h3>
+        <p><b>Prop styling</b> is in hac habitasse platea dictumst. Sed accumsan, neque quis ultrices fermentum, purus est cursus ex, eget convallis ipsum ipsum et dui. <b>Directives</b> is mollis augue vel fermentum ultricies. Mauris tincidunt eu nunc id bibendum. Pellentesque sit amet cursus odio. Nam malesuada suscipit arcu nec auctor. <b>Theming</b> is fusce finibus est orci, nec posuere ante iaculis sit amet. Sed ac condimentum elit. Aliquam et egestas justo. Cras leo dolor, feugiat in dolor in, rhoncus.</p>
+
+      </div>
+    </section>
+
+    <a href="#">dwadwa</a>
+    
+  </main>
+
+  <!-- <div class="home">
     <div class="wrapper">
 
-      <!-- <div class="logo">
+      <div class="logo">
         <img :src="$withBase(data.logo)" alt="logo">
-      </div> -->
-
+      </div>
 
       <div class="header">
         <h1>
-          Nimble-utils
+          Nimble Utils
+          
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipiscing 
@@ -24,14 +55,14 @@
             Documentation
           </button>
         </a>
-      <div class="header-background"></div>
+        <div class="header-background"></div>
       </div>
 
       <div class="footer" v-if="data.footer">
         {{ data.footer }}
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -44,133 +75,53 @@ export default {
 };
 </script>
 
-<style lang="stylus">
-@import './styles/config.styl'
+<style lang="scss">
+// @import './styles/config.styl'
+@import './styles/main.scss';
 
-body
-  .home
-    max-width 100%
-    min-height calc(100vh - 6rem)
-    display flex
-    padding 2.4rem 2rem 0
-  @media (max-width: $MQMobileNarrow)
-    .home
-      padding-left 0
-      padding-right 0
-      padding 1rem 0.5rem
+.index {
 
-.header
-  color $fontColor
-  margin-left 7%
+  &__hero {
+    position: relative;
 
-.header-background
-  background-image url('/background.svg')
-  background-repeat no-repeat
-  background-size cover
-  height 600px
-  width 100%
-  position fixed
-  top 0
-  left 0
-  z-index -20
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 200px;
 
-.wrapper
-  width 100%
-  display: flex
-  flex-direction column
+    background: linear-gradient(115.91deg, #9974E3 0.73%, #D56079 92.84%);
 
-  h1
-    font-size: 4rem
+    &-text {
+      
+    }
 
-  p
-    font-size: 1.5rem
+    &-background {
+      position: absolute;
+      right: 0;
+      bottom: -2px;
+      left: 0;
 
-  .button
-    background-color $btnBgColor
-    color $btnFontColor
-    border none
-    border-radius 0.3em
-    padding 1em
-    margin 1em 0.5em
-    font-size 1.2rem
-    font-family inherit
-    font-weight 400
-    text-align center
-    text-decoration none
-    display inline-block
-    -webkit-transition-duration 0.4s /* Safari */
-    transition-duration 0.4s
-    cursor pointer
-    &:hover
-      background-color $btnHvColor
-  
-  .avatar 
-    position relative
-    z-index 1
-    img
-      display block
-      width 100%
-      height auto
-      max-width 550px
-      border-radius 500rem
-  .card
-    max-width: 600px
-    width 100%
-    position relative
-    top -75px
-    padding-top 75px
-    margin-left auto 
-    margin-right auto 
-    background #fff
-    box-shadow 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius 0.3rem
-    text-align center 
-    .bio
-      padding 1em
-      .head
-        font-weight 700
-        font-size 1.3em
-      .info
-        padding-top 0.5rem
-        font-size 1em
-        color rgba(0,0,0,.4)
-      .description
-        text-align justify
-        p
-          padding 0.8em 0.5em 0
-          line-height normal
-          -webkit-margin-before 0em
-          -webkit-margin-after 0em
-          a
-            font-weight normal
-    .interests
-      padding 1em 1.5em
-      border-top 1px solid rgba(34,36,38,.1)
-    .socials
-      border-top 1px solid rgba(34,36,38,.1)
-      display flex
-      flex-direction: row
-      // align-items: center
-      justify-content: center
-      flex-wrap wrap 
-      img 
-        width 32px
-        margin 1em
-        cursor pointer
-    .actions
-      border-top 1px solid rgba(34,36,38,.1)
-      display flex
-      flex-direction: row
-      justify-content: center
-      flex-wrap wrap
-      // padding 1em
-  .footer
-      padding 1rem
-      // border-top 1px solid lighten(#bdc3c7, 50%)
-      font-weight 200
-      font-size 1rem
-      text-align center
-      color lighten($footColor, 25%)
-      margin-top auto
+      width: 100%;
 
+      // transform: translateY(100%);
+    }
+    
+  }
+
+  &__section-one {
+    width: 100%;
+    padding: 30px 0 200px;
+
+    background-image: url('/section-one-background.svg');
+    background-color: #F7F7FC;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    &-inner {
+      width: 100%;
+      max-width: 780px;
+    }
+  }
+
+}
 </style>
